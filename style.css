@@ -1,4 +1,3 @@
-/* Google Font */
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +15,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
 header {
     position: fixed;
     top: 0;
@@ -65,13 +64,14 @@ nav {
 
 #menu-btn {
     display: none;
+    font-size: 28px;
     background: none;
     border: none;
-    font-size: 28px;
     cursor: pointer;
+    color: #E91E63;
 }
 
-/* Hero Section */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -105,7 +105,7 @@ nav {
     margin-bottom: 35px;
 }
 
-/* Buttons */
+
 .hero-buttons {
     display: flex;
     gap: 20px;
@@ -113,21 +113,59 @@ nav {
 
 .hero-image img {
     border-radius: 30px;
-    width:500px;
-    max-width:100%;
+    width: 500px;
+    max-width: 100%;
 }
 
 
-/* =========================
-   Tablet Devices
-========================= */
-@media (max-width: 992px) {
+@media (max-width: 900px) {
 
+    #menu-btn {
+        display: block;
+        color: #E91E63;
+        font-size: 28px;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 80px;
+        right: -100%;
+        width: 250px;
+        background: white;
+        list-style: none;
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
+        transition: .4s;
+        display: flex;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
     .hero {
         flex-direction: column;
         text-align: center;
-        padding: 120px 5%;
+        padding: 80px 5%;
+        gap: 20px;
     }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 60px 5%;
+    }
+}
+
+
+
+@media (max-width: 992px) {
+
+
 
     .hero-text {
         max-width: 100%;
@@ -139,6 +177,7 @@ nav {
 
     .hero-image {
         margin-top: 40px;
+        width: 100%;
     }
 
     .hero-image img {
@@ -155,37 +194,8 @@ nav {
     }
 }
 
-/* =========================
-   Mobile Devices
-========================= */
+
 @media (max-width:768px) {
-
-    nav {
-        padding: 0 20px;
-    }
-
-    #menu-btn {
-        display: block;
-        color: #E91E63;
-        font-size: 28px;
-    }
-
-    .nav-links {
-        position: absolute;
-        top: 80px;
-        right: -100%;
-        width: 250px;
-        background: white;
-        flex-direction: column;
-        padding: 25px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, .1);
-        transition: .4s;
-        gap: 20px;
-    }
-
-    .nav-links.active {
-        right: 0;
-    }
 
     .hero {
         flex-direction: column;
@@ -231,9 +241,7 @@ nav {
     }
 }
 
-/* =========================
-   iPhone 12 Pro and Smaller
-========================= */
+
 @media (max-width: 430px) {
 
     .logo {
@@ -300,7 +308,7 @@ nav {
     color: #E91E63;
 }
 
-/* Statistics */
+
 .stats {
     width: 90%;
     margin: 80px auto;
@@ -322,7 +330,7 @@ nav {
     font-size: 35px;
 }
 
-/* Services */
+
 .services {
     padding: 80px 8%;
 }
@@ -368,7 +376,7 @@ nav {
     margin-bottom: 15px;
 }
 
-/* Call To Action */
+
 .cta {
     background: linear-gradient(to right, #E91E63, #9C27B0);
     color: white;
@@ -385,7 +393,7 @@ nav {
     margin-bottom: 30px;
 }
 
-/* Footer */
+
 footer {
     background: #1c1c1c;
     color: white;
@@ -425,7 +433,20 @@ hr {
     text-align: center;
 }
 
-/* Responsive */
+
+
+.built-by {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+    letter-spacing: 1px;
+}
+
+.built-by strong {
+    color: #E91E63;
+}
+
 @media(max-width:900px) {
 
     .hero {
@@ -441,13 +462,6 @@ hr {
         flex-wrap: wrap;
     }
 
-    .nav-links {
-        display: none;
-    }
-
-    #menu-btn {
-        display: block;
-    }
 
     .cta h1 {
         font-size: 35px;
