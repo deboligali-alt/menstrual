@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Tracker | Moridayat Menstrual Care</title>
+
+    <link rel="stylesheet" href="tracker.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            Moridayat <span>Menstrual Care</span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="tracker.html">Tracker</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+
+        <button id="menu-btn">
+            ☰
+        </button>
+    </nav>
+
+    <!-- Hero Banner -->
+    <section class="tracker-hero">
+
+        <div class="overlay">
+
+            <h1>Period Tracker</h1>
+            <p>
+                Track your menstrual cycle, predict your next period,
+                and understand your body better.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- Tracker Section -->
+    <section class="tracker-section">
+
+        <div class="tracker-card">
+
+            <h2>Track Your Cycle</h2>
+
+            <form>
+
+                <label>Last Period Start Date</label>
+                <input type="date" id="lastPeriod">
+
+                <label>Cycle Length (days)</label>
+                <input type="number" id="cycleLength" placeholder="e.g. 28">
+
+                <label>Period Duration (days)</label>
+                <input type="number" id="periodLength" placeholder="e.g. 5">
+
+                <button type="button" onclick="calculatePeriod()">
+                    Calculate
+                </button>
+
+            </form>
+
+            <div class="result">
+                <h3>Prediction Result</h3>
+                <p id="resultText">Your next period date will appear here.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-box">
+                <h2>Moridyat Menstrual Care</h2>
+                <p>
+                    Supporting women's health through education,
+                    awareness, and self-care.
+                </p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Quick Links</h3>
+
+                <a href="#">Home</a>
+                <a href="about.html">About</a>
+                <a href="tracker.html">Tracker</a>
+                <a href="faq.html">FAQ</a>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+
+                <p>Email: info@moridyatcare.com</p>
+                <p>Phone: +234 902 081 4349 </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            © 2026 Moridyat Menstrual Care. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
