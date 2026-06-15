@@ -10,105 +10,104 @@ body {
 }
 
 
-/* NAVBAR */
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:18px 8%;
-    background:#ffffff;
-    box-shadow:0 5px 15px rgba(0,0,0,0.08);
-    position:sticky;
-    top:0;
-    z-index:1000;
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 8%;
+    background: #ffffff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
-/* LOGO */
-.logo{
-    font-size:24px;
-    font-weight:700;
-    color:#E91E63;
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: #E91E63;
 }
 
-.logo span{
-    color:#9C27B0;
+.logo span {
+    color: #9C27B0;
 }
 
-/* NAV LINKS */
-.nav-links{
-    display:flex;
-    gap:30px;
-    list-style:none;
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
 }
 
-.nav-links li a{
-    text-decoration:none;
-    color:#444;
-    font-weight:500;
-    transition:0.3s;
-    position:relative;
+.nav-links li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 500;
+    transition: 0.3s;
+    position: relative;
 }
 
-/* hover effect */
-.nav-links li a:hover{
-    color:#E91E63;
+
+.nav-links li a:hover {
+    color: #E91E63;
 }
 
-/* underline animation */
-.nav-links li a::after{
-    content:"";
-    position:absolute;
-    left:0;
-    bottom:-5px;
-    width:0%;
-    height:2px;
-    background:#E91E63;
-    transition:0.3s;
+
+.nav-links li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0%;
+    height: 2px;
+    background: #E91E63;
+    transition: 0.3s;
 }
 
-.nav-links li a:hover::after{
-    width:100%;
+.nav-links li a:hover::after {
+    width: 100%;
 }
 
-/* HAMBURGER BUTTON */
-#menu-btn{
-    display:none;
-    font-size:28px;
-    background:none;
-    border:none;
-    cursor:pointer;
-    color:#E91E63;
+
+#menu-btn {
+    display: none;
+    font-size: 28px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #E91E63;
 }
 
-/* MOBILE VIEW */
-@media(max-width:768px){
 
-    #menu-btn{
-        display:block;
+@media(max-width:768px) {
+
+    #menu-btn {
+        display: block;
     }
 
-    .nav-links{
-        position:absolute;
-        top:70px;
-        right:-100%;
-        width:220px;
-        flex-direction:column;
-        background:white;
-        padding:20px;
-        box-shadow:0 10px 25px rgba(0,0,0,0.1);
-        transition:0.4s ease;
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: -100%;
+        width: 220px;
+        flex-direction: column;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        transition: 0.4s ease;
     }
 
-    .nav-links.active{
-        right:0;
+    .nav-links.active {
+        right: 0;
     }
 
-    .nav-links li{
-        padding:10px 0;
+    .nav-links li {
+        padding: 10px 0;
     }
 }
 
-/* HERO SECTION */
+
 .faq-hero {
     height: 50vh;
     background:
@@ -136,7 +135,7 @@ nav{
     font-size: 18px;
 }
 
-/* FAQ SECTION */
+
 .faq-section {
     padding: 80px 8%;
     display: flex;
@@ -148,7 +147,7 @@ nav{
     max-width: 800px;
 }
 
-/* FAQ ITEM */
+
 .faq-item {
     margin-bottom: 20px;
     border-radius: 15px;
@@ -156,7 +155,7 @@ nav{
     box-shadow: 0 5px 20px rgba(0, 0, 0, .08);
 }
 
-/* QUESTION */
+
 .faq-question {
     width: 100%;
     padding: 20px;
@@ -178,7 +177,7 @@ nav{
     color: #E91E63;
 }
 
-/* ANSWER */
+
 .faq-answer {
     max-height: 0;
     overflow: hidden;
@@ -199,18 +198,18 @@ nav{
     line-height: 1.6;
 }
 
-/* ACTIVE STATE */
+
 .faq-item.active .faq-answer {
     max-height: 300px;
 }
 
-/* ICON ROTATION */
+
 .faq-item.active i {
     transform: rotate(45deg);
     transition: .3s;
 }
 
-/* RESPONSIVE */
+
 @media(max-width:768px) {
 
     .faq-hero h1 {
@@ -255,4 +254,16 @@ hr {
 
 .copyright {
     text-align: center;
+}
+
+.built-by {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+    letter-spacing: 1px;
+}
+
+.built-by strong {
+    color: #E91E63;
 }

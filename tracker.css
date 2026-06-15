@@ -12,7 +12,7 @@ body {
 }
 
 
-/* NAVBAR */
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -25,7 +25,7 @@ nav {
     z-index: 1000;
 }
 
-/* LOGO */
+
 .logo {
     font-size: 24px;
     font-weight: 700;
@@ -36,7 +36,7 @@ nav {
     color: #9C27B0;
 }
 
-/* NAV LINKS */
+
 .nav-links {
     display: flex;
     gap: 30px;
@@ -51,12 +51,11 @@ nav {
     position: relative;
 }
 
-/* hover effect */
 .nav-links li a:hover {
     color: #E91E63;
 }
 
-/* underline animation */
+
 .nav-links li a::after {
     content: "";
     position: absolute;
@@ -72,7 +71,7 @@ nav {
     width: 100%;
 }
 
-/* HAMBURGER BUTTON */
+
 #menu-btn {
     display: none;
     font-size: 28px;
@@ -82,7 +81,7 @@ nav {
     color: #E91E63;
 }
 
-/* MOBILE VIEW */
+
 @media(max-width:768px) {
 
     #menu-btn {
@@ -129,7 +128,7 @@ nav {
     align-items: center;
 }
 
-/* HERO SECTION */
+
 .tracker-hero {
     height: 55vh;
     background:
@@ -157,14 +156,13 @@ nav {
     font-size: 18px;
 }
 
-/* TRACKER SECTION */
+
 .tracker-section {
     padding: 80px 8%;
     display: flex;
     justify-content: center;
 }
 
-/* CARD */
 .tracker-card {
     background: white;
     width: 100%;
@@ -180,7 +178,7 @@ nav {
     margin-bottom: 25px;
 }
 
-/* FORM */
+
 form {
     display: flex;
     flex-direction: column;
@@ -204,7 +202,7 @@ input:focus {
     border-color: #E91E63;
 }
 
-/* BUTTON */
+
 button {
     margin-top: 10px;
     padding: 14px;
@@ -223,7 +221,7 @@ button:hover {
     transform: scale(1.02);
 }
 
-/* RESULT BOX */
+
 .result {
     margin-top: 30px;
     padding: 20px;
@@ -237,13 +235,13 @@ button:hover {
     margin-bottom: 10px;
 }
 
-/* BACKGROUND IMAGE FOR SECTION IDEA (OPTIONAL CARD STYLE) */
+
 .tracker-card::before {
     content: "";
     position: absolute;
 }
 
-/* RESPONSIVE */
+
 @media(max-width:768px) {
 
     .tracker-hero h1 {
@@ -292,4 +290,16 @@ hr {
 
 .copyright {
     text-align: center;
+}
+
+.built-by {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #bbb;
+    letter-spacing: 1px;
+}
+
+.built-by strong {
+    color: #E91E63;
 }
